@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principales - Merienda Navideña</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
+</head>
+<body class="quiz-page">
+    <div class="quiz-container">
+        <div class="header">
+            <h1>PRINCIPALES 🎅</h1>
+        </div>
+
+        <div class="question-card">
+            <div class="image-container">
+                <img src="images/principales.png" alt="principales" id="img_principales" class="imagen_difuminada">
+            </div>
+            
+            <div id="div_p1">
+                <h2 class="question-title">Principal 1</h2>
+                <p class="question-description">Capas infinitas de documentos, PDFs que nadie revisa y una salsa secreta llamada "¿Pero dónde guardé este archivo?"</p>
+                <form id="form_principales1">
+                    <div class="options-grid">
+                        <div class="option-card">
+                            <input type="radio" id="resp_prin1" name="entrante" value="resp_prin1">
+                            <label for="resp_prin1" class="option-label">Estofado de Gestión Financiera</label>
+                        </div>
+                        <div class="option-card">
+                            <input type="radio" id="resp_prin2" name="entrante" value="resp_prin2">
+                            <label for="resp_prin2" class="option-label">Lasaña de Gestión Avanzada de la Información</label>
+                        </div>
+                        <div class="option-card">
+                            <input type="radio" id="resp_prin3" name="entrante" value="resp_prin3">
+                            <label for="resp_prin3" class="option-label">Linguini de Lenguaje de Marcas</label>
+                        </div>
+                        <div class="option-card">
+                            <input type="radio" id="resp_prin4" name="entrante" value="resp_prin4">
+                            <label for="resp_prin4" class="option-label">Tarta Lingüística de Francés e Inglés</label>
+                        </div>
+                    </div>
+                    <button type="button" class="submit-btn" onclick="verificarRespuesta('pregunta4')">🎁 Enviar Respuesta</button>
+                </form>
+            </div>
+
+            <div id="div_p2" style="display: none">
+                <h2 class="question-title">Principal 2</h2>
+                <p class="question-description">Cocción lenta de presupuestos, gastos y previsiones, servido con aroma a "este Excel pide clemencia".</p>
+                <form id="form_principales2">
+                    <div class="options-grid">
+                        <div class="option-card">
+                            <input type="radio" id="resp_prin5" name="entrante" value="resp_prin5">
+                            <label for="resp_prin5" class="option-label">Estofado de Gestión Financiera</label>
+                        </div>
+                        <div class="option-card">
+                            <input type="radio" id="resp_prin6" name="entrante" value="resp_prin6">
+                            <label for="resp_prin6" class="option-label">Lasaña de Gestión Avanzada de la Información</label>
+                        </div>
+                        <div class="option-card">
+                            <input type="radio" id="resp_prin7" name="entrante" value="resp_prin7">
+                            <label for="resp_prin7" class="option-label">Linguini de Lenguaje de Marcas</label>
+                        </div>
+                        <div class="option-card">
+                            <input type="radio" id="resp_prin8" name="entrante" value="resp_prin8">
+                            <label for="resp_prin8" class="option-label">Tarta Lingüística de Francés e Inglés</label>
+                        </div>
+                    </div>
+                    <button type="button" class="submit-btn" onclick="verificarRespuesta('pregunta5')">🎁 Enviar Respuesta</button>
+                </form>
+            </div>
+
+            <div id="div_p3" style="display: none">
+                <h2 class="question-title">Principal 3</h2>
+                <p class="question-description">Tiras de etiquetas perfectamente ordenadas, con un aliño suave de HTML que se rompe por un cierre mal puesto.</p>
+                <form id="form_principales3">
+                    <div class="options-grid">
+                        <div class="option-card">
+                            <input type="radio" id="resp_prin9" name="entrante" value="resp_prin9">
+                            <label for="resp_prin9" class="option-label">Estofado de Gestión Financiera</label>
+                        </div>
+                        <div class="option-card">
+                            <input type="radio" id="resp_prin10" name="entrante" value="resp_prin10">
+                            <label for="resp_prin10" class="option-label">Lasaña de Gestión Avanzada de la Información</label>
+                        </div>
+                        <div class="option-card">
+                            <input type="radio" id="resp_prin11" name="entrante" value="resp_prin11">
+                            <label for="resp_prin11" class="option-label">Linguini de Lenguaje de Marcas</label>
+                        </div>
+                        <div class="option-card">
+                            <input type="radio" id="resp_prin12" name="entrante" value="resp_prin12">
+                            <label for="resp_prin12" class="option-label">Tarta Lingüística de Francés e Inglés</label>
+                        </div>
+                    </div>
+                    <button type="button" class="submit-btn" onclick="verificarRespuesta('pregunta6')">🎁 Enviar Respuesta</button>
+                </form>
+            </div>
+
+            <div id="div_continuar" style="display: none">
+                <a href="postres.html" class="continue-btn">🎄 Continuar a Postres 🎄</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

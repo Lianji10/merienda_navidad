@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postres - Merienda Navideña</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/script.js"></script>
+  </head>
+  <body class="quiz-page">
+    <div class="quiz-container">
+      <div class="header"><h1>POSTRES 🎂</h1></div>
+      <div class="question-card">
+        <div class="image-container">
+          <img
+            src="images/postres.png"
+            alt="postres"
+            id="img_postres"
+            class="imagen_difuminada"
+          />
+        </div>
+        <div id="div_p1">
+          <h2 class="question-title">Postre 1</h2>
+          <div id="mensajeRespuesta1" class="mensaje-respuesta"></div>
+          <p class="question-description">
+            Dulce mezcla internacional con vocabulario suave, expresiones
+            deliciosas y un toque de pronunciación "aprobadita".
+          </p>
+          <form id="form_postres1">
+            <div class="options-grid">
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="resp_postre1"
+                  name="postre1"
+                  value="resp_postre1"
+                />
+                <label for="resp_postre1" class="option-label"
+                  >Limonada de Sostenibilidad Aplicada al Sistema
+                  Productivo</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="resp_postre2"
+                  name="postre1"
+                  value="resp_postre2"
+                />
+                <label for="resp_postre2" class="option-label"
+                  >Café de Digitalización Aplicada al Sistema Productivo</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="resp_postre3"
+                  name="postre1"
+                  value="resp_postre3"
+                />
+                <label for="resp_postre3" class="option-label"
+                  >Tarta Lingüística de Francés e Inglés</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="resp_postre4"
+                  name="postre1"
+                  value="resp_postre4"
+                />
+                <label for="resp_postre4" class="option-label"
+                  >Flan de Itinerario Personal para la Empleabilidad</label
+                >
+              </div>
+            </div>
+            <button
+              type="button"
+              class="submit-btn"
+              onclick="verificarRespuesta('pregunta7')"
+            >
+              🎁 Enviar Respuesta
+            </button>
+          </form>
+        </div>
+        <div id="div_p2" style="display: none">
+          <h2 class="question-title">Postre 2</h2>
+          <div id="mensajeRespuesta2" class="mensaje-respuesta"></div>
+          <p class="question-description">
+            Suave, motivador y lleno de futuro… pero servido con la típica
+            pregunta: "¿Y tú qué quieres hacer con tu vida?"
+          </p>
+          <form id="form_postres2">
+            <div class="options-grid">
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="resp_postre5"
+                  name="postre2"
+                  value="resp_postre5"
+                />
+                <label for="resp_postre5" class="option-label"
+                  >Limonada de Sostenibilidad Aplicada al Sistema
+                  Productivo</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="resp_postre6"
+                  name="postre2"
+                  value="resp_postre6"
+                />
+                <label for="resp_postre6" class="option-label"
+                  >Café de Digitalización Aplicada al Sistema Productivo</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="resp_postre7"
+                  name="postre2"
+                  value="resp_postre7"
+                />
+                <label for="resp_postre7" class="option-label"
+                  >Tarta Lingüística de Francés e Inglés</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="resp_postre8"
+                  name="postre2"
+                  value="resp_postre8"
+                />
+                <label for="resp_postre8" class="option-label"
+                  >Flan de Itinerario Personal para la Empleabilidad</label
+                >
+              </div>
+            </div>
+            <button
+              type="button"
+              class="submit-btn"
+              onclick="verificarRespuesta('pregunta8')"
+            >
+              🎁 Enviar Respuesta
+            </button>
+          </form>
+        </div>
+        <div id="div_continuar" style="display: none">
+          <a href="bebidas.html" class="continue-btn">Continuar a Bebidas🎄</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

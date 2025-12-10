@@ -1,0 +1,347 @@
+/* =============================
+   ESTILOS GENERALES
+============================= */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    transition: background 0.5s ease;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+/* =============================
+   PÁGINA DE INICIO
+============================= */
+.home-page {
+    position: relative;
+    background-color: #1a472a;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation: slideUp 0.8s ease forwards;
+}
+
+
+.logo-container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    transform: scale(0.9);
+    animation: popIn 0.6s ease forwards;
+}
+
+.title {
+    color: #c41e3a;
+    font-size: 2.2rem;
+    font-weight: bold;
+    animation: fadeInText 1s ease forwards;
+}
+
+.subtitle {
+    color: #1a472a;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    animation: fadeInText 1s 0.3s ease forwards;
+}
+
+.info-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeUp 0.8s 0.2s ease forwards;
+}
+
+.start-btn {
+    display: inline-block;
+    background: #c41e3a;
+    padding: 14px 40px;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.start-btn:hover {
+    background: #8b1428;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* =============================
+   QUIZ
+============================= */
+.quiz-page {
+    background-color: #1a472a;
+    padding: 20px;
+}
+
+.quiz-container {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.header h1 {
+    text-align: center;
+    color: #c41e3a;
+    font-size: 1.8rem;
+}
+
+.progress {
+    height: 10px;
+    background-color: #ffd700;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: width 0.4s ease;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.4s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.03);
+}
+
+.imagen_difuminada {
+    filter: blur(8px);
+    transition: filter 0.5s ease;
+}
+
+.option-card {
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 12px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.option-card:hover {
+    background: #e6e6e6;
+    transform: translateX(3px);
+}
+
+.option-card.selected {
+    border-color: #959595;
+    background: #e1dede;
+}
+
+.div_continuar {
+    text-align: center;
+}
+
+.submit-btn,
+.continue-btn {
+    display: inline-block;
+    margin-top: 15px; /* Separación de la imagen */
+    padding: 10px 20px;
+    background-color: #c62828; /* Rojo navideño */
+    color: white;
+    text-decoration: none; /* Quita el underline */ 
+    border-radius: 8px; /* Bordes redondeados del botón */
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover,
+.continue-btn:hover {
+    background: #8b1428;
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* =============================
+   PÁGINA FINAL
+============================= */
+.final-page {
+    background-color: #1a472a;
+    padding: 30px 20px;
+    min-height: 100vh;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.final-box {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    transform: scale(0.95);
+    animation: popIn 0.6s ease forwards;
+}
+
+.final-header { text-align: center; }
+
+.final-title {
+    text-align: center;
+    color: #c41e3a;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    animation: fadeInText 1s ease forwards;
+}
+
+.final-message {
+    color: white;
+    text-align: center;
+    animation: fadeInText 1s 0.3s ease forwards;
+}
+
+.final-event,
+.final-subtitle {
+    text-align: center;
+    color: #ffffff;
+}
+
+.menu-item {
+    background: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.restart-btn {
+    display: inline-block;
+    padding: 12px 40px;
+    background: #c41e3a;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.restart-btn:hover {
+    background: #8b1428;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* =============================
+   ANIMACIONES
+============================= */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeInText {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* =============================
+   MOBILE FIRST
+============================= */
+@media (max-width: 480px) {
+    .title { font-size: 1.8rem; }
+    .subtitle { font-size: 1rem; }
+    .start-btn { font-size: 1.1rem; padding: 12px 30px; }
+    .final-title { font-size: 1.6rem; }
+    .quiz-container, .info-card, .final-box { padding: 15px; }
+}
+
+/* =============================
+   NIEVE REALISTA
+============================= */
+.snowflakes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.snowflake {
+    position: absolute;
+    top: -2%;
+    color: white;
+    user-select: none;
+    opacity: 0.7;
+    animation: fall linear infinite;
+}
+
+/* Diferentes tamaños y duraciones */
+.snowflake:nth-child(1) { left: 5%; font-size: 1rem; animation-duration: 8s; animation-delay: 0s; }
+.snowflake:nth-child(2) { left: 20%; font-size: 1.2rem; animation-duration: 10s; animation-delay: 1s; }
+.snowflake:nth-child(3) { left: 35%; font-size: 0.9rem; animation-duration: 12s; animation-delay: 2s; }
+.snowflake:nth-child(4) { left: 50%; font-size: 1.1rem; animation-duration: 9s; animation-delay: 0.5s; }
+.snowflake:nth-child(5) { left: 65%; font-size: 1rem; animation-duration: 11s; animation-delay: 1.5s; }
+.snowflake:nth-child(6) { left: 80%; font-size: 1.3rem; animation-duration: 13s; animation-delay: 2.5s; }
+.snowflake:nth-child(7) { left: 90%; font-size: 1rem; animation-duration: 10s; animation-delay: 1s; }
+.snowflake:nth-child(8) { left: 90%; font-size: 1rem; animation-duration: 10s; animation-delay: 1s; }
+.snowflake:nth-child(9) { left: 65%; font-size: 1rem; animation-duration: 11s; animation-delay: 1.5s; }
+.snowflake:nth-child(10) { left: 35%; font-size: 0.9rem; animation-duration: 12s; animation-delay: 2s; }
+.snowflake:nth-child(11) { left: 80%; font-size: 1.3rem; animation-duration: 13s; animation-delay: 2.5s; }
+
+/* Animación de caída */
+@keyframes fall {
+    0% {
+        top: -5%;
+        transform: translateX(0) rotate(0deg);
+        opacity: 0.7;
+    }
+    50% {
+        transform: translateX(15px) rotate(180deg);
+        opacity: 0.8;
+    }
+    100% {
+        top: 105%;
+        transform: translateX(-15px) rotate(360deg);
+        opacity: 0.7;
+    }
+}

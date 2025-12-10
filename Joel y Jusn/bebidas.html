@@ -1,132 +1,288 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bebidas - Merienda Navideña</title>
-    <link rel="stylesheet" type="text/css" href="css/estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="js/script.js"></script>
-</head>
-<body class="quiz-page">
+  </head>
+  <body class="quiz-page">
     <div class="quiz-container">
-        <div class="header">
-            <h1>BEBIDAS ☕</h1>
+      <div class="header"><h1>BEBIDAS ☕</h1></div>
+      <div class="question-card">
+        <div class="image-container">
+          <img
+            src="images/bebidas.png"
+            alt="bebidas"
+            id="img_bebidas"
+            class="imagen_difuminada"
+          />
         </div>
-
-        <div class="question-card">
-            <div class="image-container">
-                <img src="images/bebidas.png" alt="bebidas" id="img_bebidas" class="imagen_difuminada">
+        <div id="div_p1">
+          <h2 class="question-title">Bebida 1</h2>
+          <div id="mensajeRespuesta1" class="mensaje-respuesta"></div>
+          <p class="question-description">
+            Intenso, moderno y servido en una taza con QR que nadie consigue
+            escanear. Ideal para despertarte… si el WiFi colabora.
+          </p>
+          <form id="form_bebida1">
+            <div class="options-grid">
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="resp_bebida1"
+                  name="bebida1"
+                  value="resp_bebida1"
+                />
+                <label for="resp_bebida1" class="option-label"
+                  >Té de Gestión de Recursos Humanos</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="resp_bebida2"
+                  name="bebida1"
+                  value="resp_bebida2"
+                />
+                <label for="resp_bebida2" class="option-label"
+                  >Malteada de Desarrollo de Aplicaciones Multiplataforma</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="resp_bebida3"
+                  name="bebida1"
+                  value="resp_bebida3"
+                />
+                <label for="resp_bebida3" class="option-label"
+                  >Limonada de Sostenibilidad Aplicada al Sistema
+                  Productivo</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="resp_bebida4"
+                  name="bebida1"
+                  value="resp_bebida4"
+                />
+                <label for="resp_bebida4" class="option-label"
+                  >Café de Digitalización Aplicada al Sistema Productivo</label
+                >
+              </div>
             </div>
-            
-            <div id="div_p1">
-                <h2 class="question-title">Bebida 1</h2>
-                <p class="question-description">Intenso, moderno y servido en una taza con QR que nadie consigue escanear. Ideal para despertarte… si el WiFi colabora.</p>
-                <form id="form_bebida1">
-                    <div class="options-grid">
-                        <div class="option-card">
-                            <input type="radio" id="resp_bebida1" name="entrante" value="resp_bebida1">
-                            <label for="resp_bebida1" class="option-label">Té de Gestión de Recursos Humanos</label>
-                        </div>
-                        <div class="option-card">
-                            <input type="radio" id="resp_bebida2" name="entrante" value="resp_bebida2">
-                            <label for="resp_bebida2" class="option-label">Malteada de Desarrollo de Aplicaciones Multiplataforma</label>
-                        </div>
-                        <div class="option-card">
-                            <input type="radio" id="resp_bebida3" name="entrante" value="resp_bebida3">
-                            <label for="resp_bebida3" class="option-label">Limonada de Sostenibilidad Aplicada al Sistema Productivo</label>
-                        </div>
-                        <div class="option-card">
-                            <input type="radio" id="resp_bebida4" name="entrante" value="resp_bebida4">
-                            <label for="resp_bebida4" class="option-label">Café de Digitalización Aplicada al Sistema Productivo</label>
-                        </div>
-                    </div>
-                    <button type="button" class="submit-btn" onclick="verificarRespuesta('pregunta9')">🎁 Enviar Respuesta</button>
-                </form>
-            </div>
-
-            <div id="div_p2" style="display: none">
-                <h2 class="question-title">Bebida 2</h2>
-                <p class="question-description">Fresca, con huella de carbono cero y sabor eco-friendly. Perfecta para beber despacio y reciclar con responsabilidad.</p>
-                <form id="form_bebida2">
-                    <div class="options-grid">
-                        <div class="option-card">
-                            <input type="radio" id="resp_bebida5" name="entrante" value="resp_bebida5">
-                            <label for="resp_bebida5" class="option-label">Té de Gestión de Recursos Humanos</label>
-                        </div>
-                        <div class="option-card">
-                            <input type="radio" id="resp_bebida6" name="entrante" value="resp_bebida6">
-                            <label for="resp_bebida6" class="option-label">Malteada de Desarrollo de Aplicaciones Multiplataforma</label>
-                        </div>
-                        <div class="option-card">
-                            <input type="radio" id="resp_bebida7" name="entrante" value="resp_bebida7">
-                            <label for="resp_bebida7" class="option-label">Limonada de Sostenibilidad Aplicada al Sistema Productivo</label>
-                        </div>
-                        <div class="option-card">
-                            <input type="radio" id="resp_bebida8" name="entrante" value="resp_bebida8">
-                            <label for="resp_bebida8" class="option-label">Café de Digitalización Aplicada al Sistema Productivo</label>
-                        </div>
-                    </div>
-                    <button type="button" class="submit-btn" onclick="verificarRespuesta('pregunta10')">🎁 Enviar Respuesta</button>
-                </form>
-            </div>
-
-            <div id="div_p3" style="display: none">
-                <h2 class="question-title">Bebida 3</h2>
-                <p class="question-description">Batido adaptable a cualquier vaso, copa o recipiente. Cambia de sabor según el sistema operativo donde la bebas.</p>
-                <form id="form_bebida3">
-                    <div class="options-grid">
-                        <div class="option-card">
-                            <input type="radio" id="resp_bebida9" name="entrante" value="resp_bebida9">
-                            <label for="resp_bebida9" class="option-label">Té de Gestión de Recursos Humanos</label>
-                        </div>
-                        <div class="option-card">
-                            <input type="radio" id="resp_bebida10" name="entrante" value="resp_bebida10">
-                            <label for="resp_bebida10" class="option-label">Malteada de Desarrollo de Aplicaciones Multiplataforma</label>
-                        </div>
-                        <div class="option-card">
-                            <input type="radio" id="resp_bebida11" name="entrante" value="resp_bebida11">
-                            <label for="resp_bebida11" class="option-label">Limonada de Sostenibilidad Aplicada al Sistema Productivo</label>
-                        </div>
-                        <div class="option-card">
-                            <input type="radio" id="resp_bebida12" name="entrante" value="resp_bebida12">
-                            <label for="resp_bebida12" class="option-label">Café de Digitalización Aplicada al Sistema Productivo</label>
-                        </div>
-                    </div>
-                    <button type="button" class="submit-btn" onclick="verificarRespuesta('pregunta11')">🎁 Enviar Respuesta</button>
-                </form>
-            </div>
-
-            <div id="div_p4" style="display: none">
-                <h2 class="question-title">Bebida 4</h2>
-                <p class="question-description">Suave, cálido y perfectamente infundido. Viene con una galleta en forma de "evaluación del desempeño".</p>
-                <form id="form_bebida4">
-                    <div class="options-grid">
-                        <div class="option-card">
-                            <input type="radio" id="resp_bebida13" name="entrante" value="resp_bebida13">
-                            <label for="resp_bebida13" class="option-label">Té de Gestión de Recursos Humanos</label>
-                        </div>
-                        <div class="option-card">
-                            <input type="radio" id="resp_bebida14" name="entrante" value="resp_bebida14">
-                            <label for="resp_bebida14" class="option-label">Malteada de Desarrollo de Aplicaciones Multiplataforma</label>
-                        </div>
-                        <div class="option-card">
-                            <input type="radio" id="resp_bebida15" name="entrante" value="resp_bebida15">
-                            <label for="resp_bebida15" class="option-label">Limonada de Sostenibilidad Aplicada al Sistema Productivo</label>
-                        </div>
-                        <div class="option-card">
-                            <input type="radio" id="resp_bebida16" name="entrante" value="resp_bebida16">
-                            <label for="resp_bebida16" class="option-label">Café de Digitalización Aplicada al Sistema Productivo</label>
-                        </div>
-                    </div>
-                    <button type="button" class="submit-btn" onclick="verificarRespuesta('pregunta12')">🎁 Enviar Respuesta</button>
-                </form>
-            </div>
-
-            <div id="div_continuar" style="display: none">
-                <a href="fin.html" class="continue-btn">🎄 Ver Menú Completo 🎄</a>
-            </div>
+            <button
+              type="button"
+              class="submit-btn"
+              onclick="verificarRespuesta('pregunta9')"
+            >
+              🎁 Enviar Respuesta
+            </button>
+          </form>
         </div>
+        <div id="div_p2" style="display: none">
+          <h2 class="question-title">Bebida 2</h2>
+          <div id="mensajeRespuesta2" class="mensaje-respuesta"></div>
+          <p class="question-description">
+            Fresca, con huella de carbono cero y sabor eco-friendly. Perfecta
+            para beber despacio y reciclar con responsabilidad.
+          </p>
+          <form id="form_bebida2">
+            <div class="options-grid">
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="resp_bebida5"
+                  name="bebida2"
+                  value="resp_bebida5"
+                />
+                <label for="resp_bebida5" class="option-label"
+                  >Té de Gestión de Recursos Humanos</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="resp_bebida6"
+                  name="bebida2"
+                  value="resp_bebida6"
+                />
+                <label for="resp_bebida6" class="option-label"
+                  >Malteada de Desarrollo de Aplicaciones Multiplataforma</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="resp_bebida7"
+                  name="bebida2"
+                  value="resp_bebida7"
+                />
+                <label for="resp_bebida7" class="option-label"
+                  >Limonada de Sostenibilidad Aplicada al Sistema
+                  Productivo</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="resp_bebida8"
+                  name="bebida2"
+                  value="resp_bebida8"
+                />
+                <label for="resp_bebida8" class="option-label"
+                  >Café de Digitalización Aplicada al Sistema Productivo</label
+                >
+              </div>
+            </div>
+            <button
+              type="button"
+              class="submit-btn"
+              onclick="verificarRespuesta('pregunta10')"
+            >
+              🎁 Enviar Respuesta
+            </button>
+          </form>
+        </div>
+        <div id="div_p3" style="display: none">
+          <h2 class="question-title">Bebida 3</h2>
+          <div id="mensajeRespuesta3" class="mensaje-respuesta"></div>
+          <p class="question-description">
+            Batido adaptable a cualquier vaso, copa o recipiente. Cambia de
+            sabor según el sistema operativo donde la bebas.
+          </p>
+          <form id="form_bebida3">
+            <div class="options-grid">
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="resp_bebida9"
+                  name="bebida3"
+                  value="resp_bebida9"
+                />
+                <label for="resp_bebida9" class="option-label"
+                  >Té de Gestión deRecursos Humanos</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="resp_bebida10"
+                  name="bebida3"
+                  value="resp_bebida10"
+                />
+                <label for="resp_bebida10" class="option-label"
+                  >Malteada de Desarrollo de Aplicaciones Multiplataforma</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="resp_bebida11"
+                  name="bebida3"
+                  value="resp_bebida11"
+                />
+                <label for="resp_bebida11" class="option-label"
+                  >Limonada de Sostenibilidad Aplicada al Sistema
+                  Productivo</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="resp_bebida12"
+                  name="bebida3"
+                  value="resp_bebida12"
+                />
+                <label for="resp_bebida12" class="option-label"
+                  >Café de Digitalización Aplicada al Sistema Productivo</label
+                >
+              </div>
+            </div>
+            <button
+              type="button"
+              class="submit-btn"
+              onclick="verificarRespuesta('pregunta11')"
+            >
+              🎁 Enviar Respuesta
+            </button>
+          </form>
+        </div>
+        <div id="div_p4" style="display: none">
+          <h2 class="question-title">Bebida 4</h2>
+          <div id="mensajeRespuesta4" class="mensaje-respuesta"></div>
+          <p class="question-description">
+            Suave, cálido y perfectamente infundido. Viene con una galleta en
+            forma de "evaluación del desempeño".
+          </p>
+          <form id="form_bebida4">
+            <div class="options-grid">
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="resp_bebida13"
+                  name="bebida4"
+                  value="resp_bebida13"
+                />
+                <label for="resp_bebida13" class="option-label"
+                  >Té de Gestión de Recursos Humanos</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="resp_bebida14"
+                  name="bebida4"
+                  value="resp_bebida14"
+                />
+                <label for="resp_bebida14" class="option-label"
+                  >Malteada de Desarrollo de Aplicaciones Multiplataforma</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="resp_bebida15"
+                  name="bebida4"
+                  value="resp_bebida15"
+                />
+                <label for="resp_bebida15" class="option-label"
+                  >Limonada de Sostenibilidad Aplicada al Sistema
+                  Productivo</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="resp_bebida16"
+                  name="bebida4"
+                  value="resp_bebida16"
+                />
+                <label for="resp_bebida16" class="option-label"
+                  >Café de Digitalización Aplicada al Sistema Productivo</label
+                >
+              </div>
+            </div>
+            <button
+              type="button"
+              class="submit-btn"
+              onclick="verificarRespuesta('pregunta12')"
+            >
+              🎁 Enviar Respuesta
+            </button>
+          </form>
+        </div>
+        <div id="div_continuar" style="display: none">
+          <a href="fin.html" class="continue-btn">Ver Menú Completo🎄</a>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

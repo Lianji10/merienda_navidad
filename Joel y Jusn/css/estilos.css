@@ -159,12 +159,14 @@ body {
 
 .submit-btn,
 .continue-btn {
-    width: 100%;
-    padding: 14px;
+    display: inline-block;
+    margin-top: 15px; /* Separación de la imagen */
+    padding: 10px 20px;
+    background-color: #c62828; /* Rojo navideño */
     color: white;
-    background: #c41e3a;
-    border-radius: 10px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none; /* Quita el underline */ 
+    border-radius: 8px; /* Bordes redondeados del botón */
+    transition: background-color 0.3s ease;
 }
 
 .submit-btn:hover,

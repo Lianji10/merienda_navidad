@@ -1,110 +1,224 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Entrantes - Merienda Navideña</title>
-    <link rel="stylesheet" type="text/css" href="css/estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="js/script.js"></script>
-</head>
-<body class="quiz-page">
+  </head>
+  <body class="quiz-page">
     <div class="quiz-container">
-        <div class="header">
-            <h1>ENTRANTES 🎄</h1>
+      <div class="header"><h1>ENTRANTES 🎄</h1></div>
+      <div class="question-card">
+        <div class="image-container">
+          <img
+            src="images/entrantes.png"
+            alt="entrantes"
+            id="img_entrantes"
+            class="imagen_difuminada"
+          />
         </div>
-
-        <div class="question-card">
-            <div class="image-container">
-                <img src="images/entrantes.png" alt="entrantes" id="img_entrantes" class="imagen_difuminada">
+        <div id="div_p1">
+          <h2 class="question-title">Entrante 1</h2>
+          <div id="mensajeRespuesta1" class="mensaje-respuesta"></div>
+          <p class="question-description">
+            Perfectamente alineada, distancia entre hojas medida con regla.
+            Incluye: saludo oficial, orden de precedencias y cero alimentos
+            reales.
+          </p>
+          <form id="form_entrantes1">
+            <div class="options-grid">
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="respuesta1"
+                  name="entrante1"
+                  value="respuesta1"
+                />
+                <label for="respuesta1" class="option-label"
+                  >Lasaña de Gestión Avanzada de la Información</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="respuesta2"
+                  name="entrante1"
+                  value="respuesta2"
+                />
+                <label for="respuesta2" class="option-label"
+                  >Ensalada de Protocolo con Etiqueta al Punto</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="respuesta3"
+                  name="entrante1"
+                  value="respuesta3"
+                />
+                <label for="respuesta3" class="option-label"
+                  >Pincho de Contabilidad</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="respuesta4"
+                  name="entrante1"
+                  value="respuesta4"
+                />
+                <label for="respuesta4" class="option-label"
+                  >Pincho de Organización de Eventos Empresariales</label
+                >
+              </div>
             </div>
-            
-            <div id="div_p1">
-                <h2 class="question-title">Entrante 1</h2>
-                <div id="mensajeRespuesta"></div>
-                <p class="question-description">Perfectamente alineada, distancia entre hojas medida con regla. Incluye: saludo oficial, orden de precedencias y cero alimentos reales.</p>
-                <form id="form_entrantes1">
-                    <div class="options-grid">
-                        <div class="option-card">
-                            <input type="radio" id="respuesta1" name="entrante" value="respuesta1">
-                            <label for="respuesta1" class="option-label">Lasaña de Gestión Avanzada de la Información</label>
-                        </div>
-                        <div class="option-card">
-                            <input type="radio" id="respuesta2" name="entrante" value="respuesta2">
-                            <label for="respuesta2" class="option-label">Ensalada de Protocolo con Etiqueta al Punto</label>
-                        </div>
-                        <div class="option-card">
-                            <input type="radio" id="respuesta3" name="entrante" value="respuesta3">
-                            <label for="respuesta3" class="option-label">Pincho de Contabilidad</label>
-                        </div>
-                        <div class="option-card">
-                            <input type="radio" id="respuesta4" name="entrante" value="respuesta4">
-                            <label for="respuesta4" class="option-label">Pincho de Organización de Eventos Empresariales</label>
-                        </div>
-                    </div>
-                    <button type="button" class="submit-btn" onclick="verificarRespuesta('pregunta1')">🎁 Enviar Respuesta</button>
-                </form>
-            </div>
-
-            <div id="div_p2" style="display: none">
-                <h2 class="question-title">Entrante 2</h2>
-                <div id="mensajeRespuesta"></div>
-                <p class="question-description">Planificado, calendarizado, enviado por email, aprobado por tres departamentos… y cancelado a última hora como todo buen evento</p>
-                <form id="form_entrantes2">
-                    <div class="options-grid">
-                        <div class="option-card">
-                            <input type="radio" id="respuesta5" name="entrante" value="respuesta5">
-                            <label for="respuesta5" class="option-label">Lasaña de Gestión Avanzada de la Información</label>
-                        </div>
-                        <div class="option-card">
-                            <input type="radio" id="respuesta6" name="entrante" value="respuesta6">
-                            <label for="respuesta6" class="option-label">Ensalada de Protocolo con Etiqueta al Punto</label>
-                        </div>
-                        <div class="option-card">
-                            <input type="radio" id="respuesta7" name="entrante" value="respuesta7">
-                            <label for="respuesta7" class="option-label">Pincho de Contabilidad</label>
-                        </div>
-                        <div class="option-card">
-                            <input type="radio" id="respuesta8" name="entrante" value="respuesta8">
-                            <label for="respuesta8" class="option-label">Pincho de Organización de Eventos Empresariales</label>
-                        </div>
-                    </div>
-                    <button type="button" class="submit-btn" onclick="verificarRespuesta('pregunta2')">🎁 Enviar Respuesta</button>
-                </form>
-            </div>
-
-            <div id="div_p3" style="display: none">
-                <h2 class="question-title">Entrante 3</h2>
-                <div id="mensajeRespuesta"></div>
-                <p class="question-description">Crujiente mezcla de asientos, balances y ese sabor clásico a "¿Por qué no me cuadra un céntimo?"</p>
-                
-                <form id="form_entrantes3">
-                    <div class="options-grid">
-                        <div class="option-card">
-                            <input type="radio" id="respuesta9" name="entrante" value="respuesta9">
-                            <label for="respuesta9" class="option-label">Lasaña de Gestión Avanzada de la Información</label>
-                        </div>
-                        <div class="option-card">
-                            <input type="radio" id="respuesta10" name="entrante" value="respuesta10">
-                            <label for="respuesta10" class="option-label">Ensalada de Protocolo con Etiqueta al Punto</label>
-                        </div>
-                        <div class="option-card">
-                            <input type="radio" id="respuesta11" name="entrante" value="respuesta11">
-                            <label for="respuesta11" class="option-label">Pincho de Contabilidad</label>
-                        </div>
-                        <div class="option-card">
-                            <input type="radio" id="respuesta12" name="entrante" value="respuesta12">
-                            <label for="respuesta12" class="option-label">Pincho de Organización de Eventos Empresariales</label>
-                        </div>
-                    </div>
-                    <button type="button" class="submit-btn" onclick="verificarRespuesta('pregunta3')">Enviar Respuesta</button>
-                </form>
-            </div>
-
-            <div id="div_continuar" style="display: none">
-                <a href="principales.html" class="continue-btn">🎄 Continuar a Principales 🎄</a>
-            </div>
+            <button
+              type="button"
+              class="submit-btn"
+              onclick="verificarRespuesta('pregunta1')"
+            >
+              🎁 Enviar Respuesta
+            </button>
+          </form>
         </div>
+        <div id="div_p2" style="display: none">
+          <h2 class="question-title">Entrante 2</h2>
+          <div id="mensajeRespuesta2" class="mensaje-respuesta"></div>
+          <p class="question-description">
+            Planificado, calendarizado, enviado por email, aprobado por tres
+            departamentos… y cancelado a última hora como todo buen evento
+          </p>
+          <form id="form_entrantes2">
+            <div class="options-grid">
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="respuesta5"
+                  name="entrante2"
+                  value="respuesta5"
+                />
+                <label for="respuesta5" class="option-label"
+                  >Lasaña de Gestión Avanzada de la Información</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="respuesta6"
+                  name="entrante2"
+                  value="respuesta6"
+                />
+                <label for="respuesta6" class="option-label"
+                  >Ensalada de Protocolo con Etiqueta al Punto</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="respuesta7"
+                  name="entrante2"
+                  value="respuesta7"
+                />
+                <label for="respuesta7" class="option-label"
+                  >Pincho de Contabilidad</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="respuesta8"
+                  name="entrante2"
+                  value="respuesta8"
+                />
+                <label for="respuesta8" class="option-label"
+                  >Pincho de Organización de Eventos Empresariales</label
+                >
+              </div>
+            </div>
+            <button
+              type="button"
+              class="submit-btn"
+              onclick="verificarRespuesta('pregunta2')"
+            >
+              🎁 Enviar Respuesta
+            </button>
+          </form>
+        </div>
+        <div id="div_p3" style="display: none">
+          <h2 class="question-title">Entrante 3</h2>
+          <div id="mensajeRespuesta3" class="mensaje-respuesta"></div>
+          <p class="question-description">
+            Crujiente mezcla de asientos, balances y ese sabor clásico a "¿Por
+            qué no me cuadra un céntimo?"
+          </p>
+          <form id="form_entrantes3">
+            <div class="options-grid">
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="respuesta9"
+                  name="entrante3"
+                  value="respuesta9"
+                />
+                <label for="respuesta9" class="option-label"
+                  >Lasaña de Gestión Avanzada de la Información</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="respuesta10"
+                  name="entrante3"
+                  value="respuesta10"
+                />
+                <label for="respuesta10" class="option-label"
+                  >Ensalada de Protocolo con Etiqueta al Punto</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="respuesta11"
+                  name="entrante3"
+                  value="respuesta11"
+                />
+                <label for="respuesta11" class="option-label"
+                  >Pincho de Contabilidad</label
+                >
+              </div>
+              <div class="option-card">
+                <input
+                  type="radio"
+                  id="respuesta12"
+                  name="entrante3"
+                  value="respuesta12"
+                />
+                <label for="respuesta12" class="option-label"
+                  >Pincho de Organización de Eventos Empresariales</label
+                >
+              </div>
+            </div>
+            <button
+              type="button"
+              class="submit-btn"
+              onclick="verificarRespuesta('pregunta3')"
+            >
+              🎁 Enviar Respuesta
+            </button>
+          </form>
+        </div>
+        <div id="div_continuar" style="display: none">
+          <a href="principales.html" class="continue-btn"
+            >Continuar a Principales🎄</a
+          >
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
